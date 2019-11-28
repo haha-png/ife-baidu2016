@@ -1,0 +1,172 @@
+body {
+    font-family:'Microsoft YaHei';
+    margin: 0;
+    background:#dedede;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+/* 标题样式设置************************************* */
+header {
+    position: relative;
+    background-color: #333;
+    height: 60px;
+}
+
+header h1 img {
+    padding: 0 0 0 20px;
+    height: 60px;
+}
+
+header  ul {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    /* text-align: center; */
+    float: left;
+    padding: 20px 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+header ul li:hover {
+    border-bottom: 2px solid red;
+    background-color: #474747;
+    border-radius: 3px;
+}
+
+/* 主内容样式设置************************************** */
+article, aside {
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 1px 1px 3px 1px #848484;
+}
+
+article h2 {
+    padding: 5px 0;
+}
+
+article h3 {
+    padding: 10px 0;
+    color: #808080;
+    font-size: 16px;
+}
+
+article a {
+    color: blue;
+}
+
+article a:hover {
+    color: red;
+}
+
+article > span {
+    line-height: 30px;
+    color:#808080;
+    font-size:12px;
+}
+
+article p {
+    text-indent: 2em;
+}
+
+article img {
+    padding: 15px 0;
+}
+
+article ul li {
+    list-style-type: none;
+}
+
+article figure {
+    border: 1px solid black;
+    width: 120px;
+    /* padding: 0 5px; */
+    text-align: center;
+}
+
+article figure img {
+    width: 110px;
+    padding-bottom: 0;
+}
+
+article table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+article table td {
+    border: 1px solid #ccc;
+}
+
+article table thead tr {
+    background-color: #333;
+    color: white;
+}
+
+article table tfoot tr {
+    background-color: #ccc;
+}
+
+/* 侧栏************************************************* */
+aside h4 {
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
+}
+
+aside form div{
+    font-size: 14px;
+    margin:15px 0;
+}
+
+aside form div .tips {
+    float: left;
+    width: 35%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+aside form div input[type="submit"] {
+    color: white;
+    width: 100%;
+    text-align: center;
+    line-height: 3;
+    background-color: #128fdc;
+    border: none;
+    border-radius: 10px;
+}
+
+aside form div input[type="submit"]:hover {
+    background-color: blue;
+}
+
+/* 页表样式设置***************************************** */
+footer {
+    height: 60px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
