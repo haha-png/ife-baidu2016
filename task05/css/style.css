@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+h1, ul {
+    margin: 0;
+}
+
+/* header设置******************************************************************* */
+header {
+    height: 60px;
+    background: #333;
+}
+
+header ul {
+    float: right;
+    list-style-type: none;  
+}
+
+header ul li {
+    display: inline-block;
+}
+
+header ul li a {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    text-decoration-line: none;
+}
+
+header h1 {
+    padding-left: 20px;
+}
+
+header h1 a img {
+    height: 42px;
+    margin-top: 9px;
+}
+
+/* 侧边栏设置******************************************************************** */
+/* 主内容设置******************************************************************** */
+/* 页脚设置********************************************************************** */
