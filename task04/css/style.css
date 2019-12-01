@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    height: 200px;
+    background: grey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+.container div {
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    position: absolute;
+}
+
+.top-left {
+    border-bottom-right-radius: 50px;
+}
+
+.bottom-right {
+    border-top-left-radius: 50px;
+    bottom: 0;
+    right: 0;
+}
