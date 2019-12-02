@@ -2,6 +2,7 @@ body {
     width: 100%;
     margin: 0;
     background: #44565c;
+    color: gray;
 }
 
 h2 {
@@ -207,4 +208,111 @@ main {
 
 .pic img {
     width: 420px;
+    vertical-align: text-bottom;
+}
+
+.pic figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0 10px 60px;
+    font-size: 12px;
+    color: green;
+    background: rgba(128, 128, 128, 0.3);
+}
+
+.pic figcaption span {
+    padding-left: 20px;
+    border-left: 2px solid green;
+    font-size: 24px;
+    color: white;
+}
+
+.container-rb {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 420px;
+    background: #ffebcd;
+}
+
+.top {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.triangle  {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid blue;
+}
+
+.top span {
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+.top span span {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.l {
+    float: left;
+    background: #ff1493;
+    color: white;
+}
+
+.l > span {
+    font-size: 100px;
+}
+
+.l p {
+    display: inline-block;
+    border-left: 2px solid white;
+    padding-left: 10px;
+}
+
+.big {
+    font-size: 17px;
+    font-style: italic;
+}
+
+.small {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.r {
+    font-size: 13px;
+}
+
+.r span {
+    font-size: 50px;
+    color: red;
+}
+
+.r span:nth-child(1) {
+    vertical-align: text-bottom;
+}
+
+.r span:nth-child(2) {
+    vertical-align: text-top;
+}
+
+footer {
+    height: 60px;
+    border-top: 2px solid gray;
+}
+
+footer span {
+    float: right;
+    font-size: 12px;
+    color: red;
 }
