@@ -1,0 +1,196 @@
+body {
+    min-width: 1300px;
+    margin: 0;
+    font-size: 15px;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+/* header设置**************************************************************************************** */
+header {
+    position: relative;
+    height: 60px;
+}
+
+.logo {
+    float: left;
+    margin-left: 100px;
+    height: 60px;
+}
+
+.logo img {
+    position: absolute;
+    top: 30px;
+    margin-top: -15px;
+    width: 30px;
+}
+
+.logo h1 {
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 27px;
+    line-height: 60px;
+}
+
+.nav {
+    float: right;
+    margin-right: 150px;
+}
+
+.nav ul {
+    position: relative;
+    overflow: hidden;
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav ul li {
+    float: left;
+    width: 100px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.slider {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100px;
+    margin-left: 0;
+    background: red;
+    transition: left 0.3s linear 0s;
+}
+
+.activity:hover ~ .slider {
+    left: 100px;
+}
+
+.project:hover ~ .slider {
+    left: 200px;
+}
+
+.community:hover ~ .slider {
+    left: 300px;
+}
+
+.about-us:hover ~ .slider {
+    left: 400px;
+}
+
+.log-in {
+    position: relative;
+    float: right;
+    height: 60px;
+    margin-right: 100px;
+}
+
+.log-in img {
+    float: left;
+    margin-top: 21px;
+}
+
+.log-in p {
+    margin: 0 0 0 30px;
+    padding-left: 10px;
+    font-size: 15px;
+    line-height: 60px;
+    color: orange;
+}
+
+.decoration {
+    position: absolute;
+    bottom: 13px;
+    left: 30px;
+    width: 0;
+    height: 3px;
+    background: red;
+    transition: all 0.3s linear 0s;
+}
+
+.log-in p:hover {
+    cursor: pointer;
+}
+
+.log-in p:hover + .decoration {
+    width: 50px;
+}
+
+/* main设置**************************************************************************************** */
+.banner {
+    position: relative;
+    height: 650px;
+    background: no-repeat url("../images/pic01.jpg");
+    background-size: cover;
+}
+
+.content {
+    position: absolute;
+    top: 200px;
+    left: 130px;
+    font-size: 20px;
+    color: white;
+}
+
+.content h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.content a {
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration-line: none;
+    color: white;
+    background: orange;
+}
+
+.description {
+    padding: 50px;
+}
+
+.description ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.description ul li {
+    display: inline-block;
+    width: 23%;
+    font-size: 13px;
+    text-align: center;
+    color: gray;
+}
+
+.description ul li p {
+    margin-top: 50px;
+}
+
+.description ul li p:hover {
+    color: red;
+}
+
+.border-r {
+    border-right: 2px solid black;
+}
+
+.section1-1 {
+    padding: 60px;
+    font-size: 50px;
+    text-align: center;
+    background: rgb(219, 219, 219);
+}
+
+.section1-1 p {
+    margin-top: 40px;
+}
