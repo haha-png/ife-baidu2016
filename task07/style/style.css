@@ -194,3 +194,282 @@ header {
 .section1-1 p {
     margin-top: 40px;
 }
+
+.section1-2 {
+    /* width: 100%; */
+    /* height: 300px; */
+    padding: 80px 0;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background: no-repeat url("../images/pic02.jpg");
+    background-size: cover;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    width: 30px;
+    height: 20px;
+    /* margin-top: 10px; */
+    border-top: 2px solid white;
+    transition: width 0.2s linear;
+}
+
+.underline:hover {
+    width: 280px;
+}
+
+.underline + p {
+    margin-bottom: 40px;
+    font-size: 13px;
+}
+
+.search select,
+.search [type="submit"] {
+    width: 200px;
+    height: 35px;
+}
+
+.search [type="submit"] {
+    color: white;
+    background: darkred;
+    transition: background 0.1s;
+}
+
+.search [type="submit"]:hover {
+    background: lightcoral;
+}
+
+.section1-3 {
+    overflow: hidden;
+    width: 100%;
+    padding: 80px 0;
+    background: rgb(219, 219, 219);
+}
+
+.section1-3 figure {
+    float: left;
+    width: 20%;
+    margin: 0;
+    text-align: center;
+}
+
+.section1-3 figure img {
+    width: 190px;
+    transition: all 0.3s linear;
+}
+
+.section1-3 .first {
+    margin-left: 10%;
+}
+
+.section1-3 figure figcaption {
+    font-size: 12px;
+    line-height: 25px;
+    color: gray;
+    transition: all 0.3s ease-in;
+}
+
+.section1-3 .bigger {
+    font-size: 15px;
+    color: black;
+    transition: font-size 0.3s ease-out;
+}
+
+.section1-3 figure img:hover {
+    position: relative;
+    top: 60px;
+}
+
+.section1-3 figure img:hover + figcaption {
+    position: relative;
+    bottom: 300px;
+}
+
+.section1-3 figure img:hover + figcaption .bigger {
+    padding-left: 22px;
+    font-size: 22px;
+    letter-spacing: 25px;
+}
+
+.section2 {
+    overflow: hidden;
+}
+
+.section2 .l {
+    position: relative;
+    float: left;
+    width: 68%;
+    height: 560px;
+    margin: 0;
+    background: no-repeat url("../images/pic07.jpg");
+    background-size: cover;
+}
+
+.section2 .l .inner {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.section2 .l .inner p:first-child {
+    font-size: 50px;
+}
+
+.section2 .l .inner p:nth-child(2) {
+    font-size: 150px;
+    line-height: 1;
+}
+
+.section2 .l .deco {
+    position: absolute;
+    top: 230px;
+    right: 0;
+    width: 0;
+    border-top: 25px solid transparent;
+    border-right: 25px solid white;
+    border-bottom: 25px solid transparent;
+}
+
+.section2 .r {
+    position: relative;
+    float: left;
+    width: 32%;
+    height: 560px;
+    text-align: center;
+}
+
+.section2 .r p:nth-child(2) {
+    text-align: left;
+}
+
+.section2 .r .option {
+    position: absolute;
+    top: 160px;
+    left: calc(50% - 140px);
+    width: 280px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: gray;
+}
+
+.section2 .r .option p:first-child {
+    font-size: 20px;
+    font-style: bold;
+    line-height: 4;
+    color: black;
+}
+
+.section2 .r .option p span {
+    color: red;
+}
+
+.section2 .r .option p:last-child {
+    width: 100px;
+    margin: 60px auto 0 auto;
+    border: 1px solid orange;
+}
+
+.section2 .r .option p:last-child a {
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    color: red;
+    text-decoration-line: none;    
+    line-height: 34px;
+}
+
+.option3,
+.option2,
+.option1 {
+    visibility: hidden;
+    transition: visibility 0s;
+}
+
+.radio1:checked + .option1 {
+    visibility: visible;
+}
+
+.radio2:checked + .option2 {
+    visibility: visible;
+}
+
+.radio3:checked + .option3 {
+    visibility: visible;
+}
+
+.radio1,
+.radio2,
+.radio3 {
+    margin-top: 460px;
+}
+
+.section3 {
+    display: flex;
+    text-align: center;
+}
+
+.section3 > div {
+    flex: 1;
+    height: 500px;
+}
+
+.section3-1 {
+    background: orangered;
+    color: white;
+}
+
+.section3-3 {
+    background: no-repeat url("../images/pic08.jpg");
+    background-size: cover;
+}
+
+.section3-1,
+.section3-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3 .wrapper {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.section3 .wrapper1 a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0 30px;
+    border: 1px solid white;
+    font-size: 20px;
+    line-height: 2;
+    text-decoration-line: none;
+    color: white;
+}
+
+.section3 .wrapper2 a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0 30px;
+    border: 1px solid orangered;
+    font-size: 20px;
+    line-height: 2;
+    text-decoration-line: none;
+    color: orangered;
+}
+
+.underline1:hover,
+.underline2:hover {
+    width: 170px;
+}
+
+.underline2 {
+    border-top-color: orangered;
+}
+
+.section4 .content {
+    display: block;
+}
