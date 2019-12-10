@@ -1,0 +1,60 @@
+$gutter: 1/(7*13)*100%;
+$col-width: 1/14*100%;
+$margin-right: $gutter;
+$row-height: 100px;
+$item-background: rgb(212, 198, 198);
+
+body {
+    margin: 0;
+}
+
+.container {
+    overflow: hidden;
+    width: 100%;
+    padding: {
+        left: $gutter;
+        top: $gutter;
+    }
+    > .item {
+        float: left;
+        height: $row-height;
+        margin: {
+            right: $gutter;
+            bottom: $gutter;
+        }
+        border: 1px solid black;
+        box-sizing: border-box;
+        background: $item-background;
+    }
+
+    // &::before, &::after {
+    //     content: "";
+    //     display: table;
+    //     clear: both;
+    // }
+}
+
+@mixin generateGrid($flag) {
+    @if $flag {
+        @for $i from 1 through 12 {
+            .col-md-#{$i} {
+                width: $i * $col-width + ($i - 1) * $gutter;
+            }
+        }
+    }
+    @else {
+        @for $i from 1 through 12 {
+            .col-sm-#{$i} {
+                width: $i * $col-width + ($i - 1) * $gutter;
+            }
+        }
+    }
+}
+
+@media (min-width: 797px) {
+    @include generateGrid(true);
+}
+
+@media (max-width: 796px) {
+    @include generateGrid(false);
+}
