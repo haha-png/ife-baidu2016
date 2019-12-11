@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <title>Baidu ife2016 task09</title>
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <img src="image/logo.png" alt="我是logo" title="我是logo">
+            <div>
+                <input type="search" name="user_search">
+                <img src="image/login.png">
+                <span>登录</span>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <nav>
+            <div class="user-info">
+                <div class="user">
+                    <div></div>
+                    <span>Snake</span>
+                </div>
+                <div class="extra">
+                    <div>110<br>收藏</div>
+                    <div>313<br>粉丝</div>
+                </div>
+            </div>
+            <div class="side-nav">
+                <ul>
+                    <li>
+                        <i class="fa fa-wpforms"></i>
+                        &nbsp;个人报表
+                        <ul>
+                            <li>
+                                <i class="fa fa-folder-o"></i>
+                                文件一
+                            </li>
+                            <li>
+                                <i class="fa fa-folder-o"></i>
+                                文件二
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-file-o"></i>
+                                        文档一
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-file-o"></i>
+                                        文档二
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <i class="fa fa-folder-o"></i>
+                                文件三
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <i class="fa fa-star"></i>
+                        &nbsp;个人收藏
+                    </li>
+                    <li>
+                        <i class="fa fa-share"></i>
+                        &nbsp;我的分享
+                    </li>
+                    <li>
+                        <i class="fa fa-image"></i>
+                        &nbsp;图库
+                    </li>
+                    <li>
+                        <i class="fa fa-bullseye"></i>
+                        &nbsp;成长记录
+                    </li>
+                    <li>
+                        <i class="fa fa-user-circle"></i>
+                        &nbsp;账户信息
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main-content">
+            <header>
+                <span>c站 / 个人报表 / 文件一 / 文件二</span>
+            </header>
+            <section class="section1">
+                <div>
+                    <label for="query-item">查询项</label>
+                    <select name="query" id="query-item">
+                        <option value="第一项" selected>第一项</option>
+                        <option value="第二项">第二项</option>
+                        <option value="第三项">第三项</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="buyer">买方</label>
+                    <select name="buyer" id="buyer">
+                        <option value="a" selected>小A</option>
+                        <option value="b">小B</option>
+                        <option value="c">小C</option>
+                    </select>
+                    <br>
+                    <label for="seller">卖方</label>
+                    <select name="seller" id="seller">
+                        <option value="d" selected>小D</option>
+                        <option value="e">小E</option>
+                        <option value="f">小F</option>
+                    </select>
+                    <img src="image/change.png">
+                </div>
+                <div>
+                    <label for="date">日期</label>
+                    <input type="text" name="date" id="date" disabled value="2016-04-01">
+                    <br>
+                    <label for="num">人数</label>
+                    <select name="num" id="num">
+                        <option value="10" selected>10人</option>
+                        <option value="20">20人</option>
+                        <option value="30">30人</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="time">总耗时</label>
+                    <select name="time" id="time">
+                        <option value="8" selected>8天</option>
+                        <option value="15">15天</option>
+                        <option value="30">20天</option>
+                    </select>
+                    <br>
+                    <label for="done">成交项</label>
+                    <select name="done" id="done">
+                        <option value="10" selected>10项</option>
+                        <option value="20">20项</option>
+                        <option value="30">30项</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="搜索">
+                </div>
+            </section>
+            <section class="section2">
+                <div>
+                    <i class="fa fa-chevron-left"></i>
+                </div>
+                <div class="h">
+                    <p>10:00am</p>
+                    <p class="price">¥1200</p>
+                </div>
+                <div class="h">
+                    <p>11:00am</p>
+                    <p class="price">¥1300</p>
+                </div>
+                <div class="h">
+                    <p>12:00am</p>
+                    <p class="price">¥1200</p>
+                </div>
+                <div class="h">
+                    <p>01:00pm</p>
+                    <p class="price">¥1400</p>
+                </div>
+                <div class="h">
+                    <p>02:00pm</p>
+                    <p class="price">¥1500</p>
+                </div>
+                <div class="h">
+                    <p>03:00pm</p>
+                    <p class="price">¥1800</p>
+                </div>
+                <div>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div>
+                    <img src="image/history.png">
+                    历史查询
+                </div>
+            </section>
+            <section class="section3">
+                <p>2016年4月份统计</p>
+                <div class="wrapper">
+                    <div>
+                        <p>13311<br>
+                            成交量</p>
+                        <div></div>
+                    </div>
+                    <div>
+                        <p>13311<br>
+                            成交量</p>
+                        <div></div>
+                    </div>
+                    <div>
+                        <p>13311<br>
+                            成交量</p>
+                        <div></div>
+                    </div>
+                    <div>
+                        <p>13311<br>
+                            成交量</p>
+                        <div></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section4">
+                <div class="l">
+                    <div>第一组项目</div>
+                    <div class="content">
+                        <input type="radio" name="item" id="" checked>
+                        <input type="radio" name="item" id="">
+                        <input type="radio" name="item" id="">
+                        <input type="radio" name="item" id="">
+                        <input type="radio" name="item" id="">
+                        <br>
+                        <div>项目一</div>
+                        <div>项目二</div>
+                        <div>项目三</div>
+                        <div>项目四</div>
+                        <div>项目五</div>
+                        <div class="table">
+                            <table>
+                                <tr>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                </tr>
+                                <tr>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                </tr>
+                                <tr>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                </tr>
+                                <tr>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                </tr>
+                                <tr>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                    <td>购买材料</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="r"></div>
+            </section>
+            <section></section>
+        </div>
+    </div>
+</body>
+
+</html>

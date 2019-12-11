@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  height: 60px;
+  background: #3498db;
+  font-size: 1.2em;
+  color: white;
+}
+header .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1300px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+header .content > div > input {
+  width: 330px;
+  height: 27px;
+  margin-right: 30px;
+  border: 1px solid transparent;
+  border-radius: 13px/10px;
+  background: white url("../image/zoom.png") no-repeat 10px 5px/12px;
+  text-indent: 2em;
+}
+header .content > div > img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.main {
+  width: 1300px;
+  height: 1200px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  color: #bdc3c7;
+  background: #ecf0f1;
+}
+.main > nav {
+  display: inline-block;
+  width: 250px;
+  height: 1200px;
+  background: #2c3e50;
+}
+.main > nav > .user-info > .user {
+  padding: 20px 50px;
+}
+.main > nav > .user-info > .user > div {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  border: 1px solid #bdc3c7;
+  border-radius: 30px;
+  background: #bdc3c7 content-box;
+}
+.main > nav > .user-info > .user > span {
+  margin-left: 10px;
+  color: white;
+}
+.main > nav > .user-info > .extra {
+  padding: 0 40px;
+}
+.main > nav > .user-info > .extra > div {
+  display: inline-block;
+  padding: 0 20px;
+}
+.main > nav > .user-info > .extra > div:hover {
+  color: red;
+}
+.main > nav > .user-info > .extra > div:first-child {
+  border-right: 1px solid #bdc3c7;
+}
+.main > nav > .side-nav {
+  padding: 20px 40px;
+  font-size: 0.9em;
+  line-height: 3.5em;
+}
+.main > nav > .side-nav > ul {
+  margin: 0;
+  padding: 0;
+}
+.main > nav > .side-nav > ul > li ul {
+  display: none;
+}
+.main > nav > .side-nav > ul li:hover {
+  color: white;
+}
+.main > nav > .side-nav > ul li:hover > ul {
+  display: block;
+  color: #bdc3c7;
+}
+
+.main-content {
+  float: right;
+  width: 1050px;
+  height: 1200px;
+  font-size: 10px;
+}
+.main-content > header {
+  box-sizing: border-box;
+  width: 1050px;
+  height: 50px;
+  padding-left: 20px;
+  box-shadow: 1px 1px #bdc3c7;
+  line-height: 50px;
+  font-size: 1.2em;
+  word-spacing: 15px;
+  color: black;
+  background: white;
+}
+.main-content > section {
+  margin: 20px 60px;
+  font-size: 1.3em;
+  color: black;
+}
+.main-content > .section1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border: 1px solid #bdc3c7;
+  box-shadow: 0 0 1px 1px #bdc3c7;
+  border-radius: 10px;
+  background: white;
+}
+.main-content > .section1 > div > label {
+  margin-right: 10px;
+}
+.main-content > .section1 > div > input,
+.main-content > .section1 > div > select {
+  height: 25px;
+  border-radius: 5px;
+}
+.main-content > .section1 > div > #query-item {
+  width: 80px;
+}
+.main-content > .section1 > div > #buyer,
+.main-content > .section1 > div > #seller {
+  width: 150px;
+}
+.main-content > .section1 > div > #seller + img {
+  position: relative;
+  top: -10px;
+}
+.main-content > .section1 > div > #date {
+  width: 130px;
+  margin-bottom: 15px;
+  padding: 0;
+  border: 1px solid darkgray;
+  background: white;
+}
+.main-content > .section1 > div > #num {
+  width: 100px;
+}
+.main-content > .section1 > div > #time {
+  margin-bottom: 15px;
+}
+.main-content > .section1 > div > #time,
+.main-content > .section1 > div > #done {
+  width: 100px;
+}
+.main-content > .section1 > div > input[type="submit"] {
+  width: 50px;
+  height: 30px;
+  border: 1px solid darkgray;
+  background: #3498db;
+}
+.main-content > .section1 > div:last-child {
+  align-self: center;
+}
+.main-content > .section2 {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content > .section2 > div {
+  padding: 5px 15px;
+  box-sizing: border-box;
+  box-shadow: -1px 0 0 0 #bdc3c7, 1px 0 0 0 #bdc3c7;
+  background: white;
+  text-align: center;
+}
+.main-content > .section2 > div:nth-child(1), .main-content > .section2 > div:nth-child(8) {
+  padding: 10px;
+  line-height: 56.6px;
+  font-size: 1.5em;
+  color: #bdc3c7;
+}
+.main-content > .section2 > div:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: -1px 0 transparent, 1px 0 0 0 #bdc3c7;
+}
+.main-content > .section2 > div:nth-child(9) {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 1px 0 transparent, -1px 0 0 0 #bdc3c7;
+}
+.main-content > .section2 > div > .price {
+  margin: 10px;
+  font-size: 1.5em;
+  color: #e67e22;
+}
+.main-content > .section2 .h:hover {
+  padding-top: 1px;
+  border-top: 4px solid #3498db;
+}
+.main-content > .section3 > .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content > .section3 > .wrapper > div {
+  display: table-cell;
+  box-sizing: border-box;
+  height: 80px;
+  padding: 10px;
+  box-shadow: 1px -1px 0 0 #bdc3c7;
+  background: white;
+}
+.main-content > .section3 > .wrapper > div > p {
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-content > .section3 > .wrapper > div > div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  height: 50px;
+  margin-left: 80px;
+}
+.main-content > .section3 > .wrapper > div:nth-child(1) {
+  border-left: 5px solid #1abc9c;
+}
+.main-content > .section3 > .wrapper > div:nth-child(1) > div {
+  background: #1abc9c;
+}
+.main-content > .section3 > .wrapper > div:nth-child(2) {
+  border-left: 5px solid #2980b9;
+}
+.main-content > .section3 > .wrapper > div:nth-child(2) > div {
+  background: #2980b9;
+}
+.main-content > .section3 > .wrapper > div:nth-child(3) {
+  border-left: 5px solid #e74c3c;
+}
+.main-content > .section3 > .wrapper > div:nth-child(3) > div {
+  background: #e74c3c;
+}
+.main-content > .section3 > .wrapper > div:nth-child(4) {
+  border-left: 5px solid #f39c12;
+}
+.main-content > .section3 > .wrapper > div:nth-child(4) > div {
+  background: #f39c12;
+}
+.main-content > .section4 {
+  height: 500px;
+}
+.main-content > .section4 .l {
+  width: 60%;
+  height: 310px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 1px #95a5a6;
+  background: white;
+}
+.main-content > .section4 .l div:first-child {
+  height: 35px;
+  padding-left: 20px;
+  line-height: 35px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #ecf0f1;
+}
+.main-content > .section4 .l > .content {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 251px;
+  padding: 20px;
+}
+.main-content > .section4 .l > .content > input {
+  position: absolute;
+  top: 10px;
+  width: 60px;
+  height: 25px;
+  margin: 0;
+}
+.main-content > .section4 .l > .content > input:nth-of-type(1) {
+  left: 20px;
+}
+.main-content > .section4 .l > .content > input:nth-of-type(2) {
+  left: 83px;
+}
+.main-content > .section4 .l > .content > input:nth-of-type(3) {
+  left: 146px;
+}
+.main-content > .section4 .l > .content > input:nth-of-type(4) {
+  left: 209px;
+}
+.main-content > .section4 .l > .content > input:nth-of-type(5) {
+  left: 272px;
+}
+.main-content > .section4 .l > .content > div {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background: #ecf0f1;
+}
+.main-content > .section4 .l > .content > div:nth-of-type(1) {
+  left: 20px;
+}
+.main-content > .section4 .l > .content > div:nth-of-type(2) {
+  left: 83px;
+}
+.main-content > .section4 .l > .content > div:nth-of-type(3) {
+  left: 146px;
+}
+.main-content > .section4 .l > .content > div:nth-of-type(4) {
+  left: 209px;
+}
+.main-content > .section4 .l > .content > div:nth-of-type(5) {
+  left: 272px;
+}
+.main-content > .section4 .l > .content > .table {
+  width: 518px;
+  height: 216px;
+  margin-top: 25px;
+  border: 1px solid #bdc3c7;
+  background: white;
+}
+.main-content > .section4 .l > .content > .table > table {
+  width: 438px;
+  margin: 40px;
+  border-collapse: collapse;
+}
+.main-content > .section4 .l > .content > .table > table td {
+  border: 1px solid #bdc3c7;
+}
+
+/*# sourceMappingURL=style.css.map */
