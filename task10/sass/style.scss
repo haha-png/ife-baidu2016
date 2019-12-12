@@ -1,0 +1,57 @@
+// reset*******************************************************************
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// main**********************************************************************
+$item-width: 200px;
+$base-border: 1px solid red;
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 95%;
+    padding: 40px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.item1,
+.item2,
+.item3,
+.item4 {
+    flex: initial;
+    width: $item-width;
+    margin: 20px 0;
+    border: $base-border;
+}
+
+.item1 {
+    height: 100px;
+}
+
+.item2 {
+    height: 50px;
+}
+
+.item3 {
+    height: 150px;
+}
+
+.item4 {
+    height: 200px;
+}
+
+@media (max-width: 840px) {
+    .item4 {
+        order: -1;
+    }
+
+    .wrapper {
+        flex-wrap: wrap;
+    }
+}
