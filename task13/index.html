@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baidu ife 2016 task13</title>
+</head>
+
+<body>
+    <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+    <button id="button">确认填写</button>
+
+    <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+
+    <script>
+        (function () {
+            /*	
+                在注释下方写下代码
+                给按钮button绑定一个点击事件
+                在事件处理函数中
+                获取aqi-input输入的值，并显示在aqi-display中
+            */
+            document.getElementById("button").addEventListener("click", display)
+
+            document.getElementById("aqi-input").addEventListener("keydown", (evt) => {
+                if (evt.key === "Enter") {
+                    display();
+                }
+            })
+
+            var warningMsg = "不是有效的AQI数值，请输入0-1000的有效整数";
+            let outMsg = document.getElementById("aqi-display");
+
+            function display() {
+                const inMsg = document.getElementById("aqi-input").value;
+
+                if (/^[0-1000]$/.test(inMsg)) {
+                    outMsg.innerHTML = inMsg;
+                } else {
+                    outMsg.innerHTML = warningMsg;
+                }
+            }
+        })()
+    </script>
+
+</body>
+
+</html>
