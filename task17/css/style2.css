@@ -1,0 +1,90 @@
+body {
+    min-width: 1250px;
+    margin: 0;
+    padding: 10px;
+}
+
+#form-gra-time {
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #929292;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 1px #bdc3c7;
+}
+
+#form-gra-time > label {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #2980b9;
+    border-radius: 25px;
+
+    text-align: center;
+    line-height: 50px;
+
+    background: white;
+}
+
+#form-gra-time > label:nth-of-type(1) {
+    margin-left: 100px;
+}
+
+.time {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+#city-select {
+    width: 100px;
+    height: 30px;
+    margin-left: 50px;
+}
+
+.aqi-chart-wrap {
+    /* box-sizing: border-box; */
+    width: 1200px;
+    height: 600px;
+    margin: 30px auto;
+    border: 1px solid #bdc3c7;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 1px #bdc3c7;
+}
+
+.aqi-chart-wrap h2 {
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+#chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+    height: calc(600px - 32px);
+}
+
+.chart-day {
+    width: 5px;
+    background: black;
+}
+
+.chart-week {
+    width: 50px;
+    background: black;
+}
+
+.chart-month {
+    width: 150px;
+    background: black;
+}
+
+.checked {
+    background: #2980b9;
+}
