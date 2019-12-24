@@ -1,0 +1,96 @@
+body {
+    min-width: 1250px;
+    margin: 0;
+    padding: 10px;
+}
+
+#form-gra-time {
+    position: relative;
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 100px;
+    border: 1px solid #929292;
+    border-radius: 10px;
+}
+
+#form-gra-time input[type="radio"] {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+#form-gra-time label[for^="time"] {
+    position: absolute;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #2980b9;
+    border-radius: 25px;
+    background: white;
+
+    text-align: center;
+    line-height: 50px;
+}
+
+#form-gra-time label[for="time-day"] {
+    left: 100px;
+}
+
+#form-gra-time label[for="time-week"] {
+    left: 154px;
+}
+
+#form-gra-time label[for="time-month"] {
+    left: 208px;
+}
+
+#form-gra-time input[type="radio"]:checked + label {
+    background: #2980b9;
+}
+
+#city-select {
+    position: absolute;
+    top: 35px;
+    left: 300px;
+    width: 100px;
+    height: 30px;
+}
+
+.aqi-chart-wrap {
+    width: 1200px;
+    height: 600px;
+    margin: 30px auto;
+    border: 1px solid #bdc3c7;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 1px #bdc3c7;
+}
+
+.aqi-chart-wrap h2 {
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+#chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+    height: calc(600px - 32px);
+}
+
+.chart-day {
+    width: 5px;
+    background: black;
+}
+
+.chart-week {
+    width: 50px;
+    background: black;
+}
+
+.chart-month {
+    width: 150px;
+    background: black;
+}

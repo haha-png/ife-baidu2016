@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baidu ife 2016 task17</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <fieldset id="form-gra-time">
+        <legend>请选择日期与城市：</legend>
+        <input name="gra-time" value="day" type="radio" checked="checked" id="time-day">
+        <label for="time-day">天</label>
+        <input name="gra-time" value="week" type="radio" id="time-week">
+        <label for="time-week">周</label>
+        <input name="gra-time" value="month" type="radio" id="time-month">
+        <label for="time-month">月</label>
+        <select id="city-select">
+            <option value="bj" selected>北京</option>
+            <option value="sh">上海</option>
+            <option value="gz">广州</option>
+            <option value="xm">厦门</option>
+            <option value="fy">阜阳</option>
+            <option value="fz">福州</option>
+            <option value="qz">泉州</option>
+        </select>
+    </fieldset>
+
+    <div class="aqi-chart-wrap">
+        <h2>hello world</h2>
+        <div id="chart"></div>
+    </div>
+</body>
+
+</html>
