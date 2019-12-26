@@ -127,8 +127,8 @@ var queue = {
             this.randomGenerateQueue();
         } else {
             for (var i = 0; i < level; i++) {
-                var index1 = Math.floor(Math.random()*this.value.length);
-                var index2 = Math.floor(Math.random()*this.value.length);
+                var index1 = Math.floor(Math.random() * this.value.length);
+                var index2 = Math.floor(Math.random() * this.value.length);
                 var temp = 0;
 
                 temp = this.value[index1];
@@ -137,6 +137,31 @@ var queue = {
             }
 
             this.renderAll();
+        }
+    },
+
+    bubbleSort: function () {
+        var order = 0;
+
+        for (var i = 0; i < this.value.length; i++) {
+
+            for (var j = 0; j < this.value.length - i - 1; j++) {
+
+                var temp;
+                order++;
+
+                if (this.value[j] > this.value[j + 1]) {
+                    temp = this.value[j];
+                    this.value[j] = this.value[j + 1];
+                    this.value[j + 1] = temp;
+
+                    this.renderTarget.children[j].style.order = order;
+                } else {
+                    this.renderTarget.children[j+1].style.order = order;
+                }
+            }
+
+            order = 0;
         }
     },
 
@@ -162,7 +187,7 @@ var queue = {
                 this.renderTarget.insertBefore(div, this.renderTarget.firstElementChild);
             } else {
                 // div.innerHTML = this.value[this.value.length - 1];
-                div.style.height = this.value[this.value.length-1] + 'px';
+                div.style.height = this.value[this.value.length - 1] + 'px';
                 this.promptBoxTarget.innerHTML = '从右侧进入队列的数据是： ' + this.value[this.value.length - 1];
                 this.renderTarget.appendChild(div);
             }
@@ -230,8 +255,12 @@ eventHandler(rDequeueBtn, 'click', function () {
     queue.rDequeue();
 });
 
-eventHandler(disorderBtn, 'click', function() {
+eventHandler(disorderBtn, 'click', function () {
     queue.disorder(100);
 });
+
+eventHandler(bubbleBtn, 'click', function () {
+    queue.bubbleSort();
+})
 
 queue.randomGenerateQueue(10);
