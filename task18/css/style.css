@@ -1,0 +1,19 @@
+#prompt {
+    color: red;
+}
+
+#queue-display {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.queue-item {
+    float: left;
+    margin-right: 20px;
+    width: 70px;
+    height: 90px;
+    background: #e67e22;
+
+    text-align: center;
+    line-height: 90px;
+}
