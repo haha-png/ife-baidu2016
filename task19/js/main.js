@@ -141,27 +141,24 @@ var queue = {
     },
 
     bubbleSort: function () {
-        var order = 0;
 
         for (var i = 0; i < this.value.length; i++) {
 
             for (var j = 0; j < this.value.length - i - 1; j++) {
 
                 var temp;
-                order++;
 
-                if (this.value[j] > this.value[j + 1]) {
+                if (Number(this.value[j]) > Number(this.value[j + 1])) {
                     temp = this.value[j];
                     this.value[j] = this.value[j + 1];
                     this.value[j + 1] = temp;
 
-                    this.renderTarget.children[j].style.order = order;
-                } else {
-                    this.renderTarget.children[j+1].style.order = order;
-                }
-            }
+                    let ele = this.renderTarget.children[j];
 
-            order = 0;
+                    this.renderTarget.removeChild(ele);
+                    this.renderTarget.insertBefore(ele, this.renderTarget.children[j+1]);
+                } 
+            }
         }
     },
 
@@ -192,11 +189,19 @@ var queue = {
                 this.renderTarget.appendChild(div);
             }
 
-            eventHandler(div, 'click', function () {
-                //可以尝试计算被删除的元素排在哪一位
-                queue.promptBoxTarget.innerHTML = '该元素被删除了';
-                queue.renderTarget.removeChild(div);
-            });
+            var child = this.renderTarget.children;
+
+            for (var j = 0; j < this.value.length; j++) {
+                var childEle = child[j];
+                let index = j; 
+    
+                eventHandler(childEle, 'click', function () {
+                    //可以尝试计算被删除的元素排在哪一位
+                    queue.value.splice(index, 1);
+                    queue.promptBoxTarget.innerHTML = '该元素被删除了';
+                    queue.renderTarget.removeChild(event.target);
+                });
+            }
         } else {
 
             if (inQueueFront) {
@@ -229,9 +234,11 @@ var queue = {
 
         for (var j = 0; j < this.value.length; j++) {
             var childEle = child[j];
+            let index = j; 
 
             eventHandler(childEle, 'click', function () {
                 //可以尝试计算被删除的元素排在哪一位
+                queue.value.splice(index, 1);
                 queue.promptBoxTarget.innerHTML = '该元素被删除了';
                 queue.renderTarget.removeChild(event.target);
             });
@@ -263,4 +270,4 @@ eventHandler(bubbleBtn, 'click', function () {
     queue.bubbleSort();
 })
 
-queue.randomGenerateQueue(10);
+queue.randomGenerateQueue(30);
