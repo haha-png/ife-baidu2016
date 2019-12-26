@@ -43,7 +43,7 @@ var eventHandler = (function() {
         }
     } else {
         return function(ele, type, handler) {
-            ele.attachEvent(type, handler);
+            ele.attachEvent('on' + type, handler);
         }
     }
 })();
@@ -67,6 +67,11 @@ eventHandler(lEnqueueBtn, 'click', function() {
     
 
     queueDisplay.insertBefore(div, queueDisplay.firstElementChild);
+
+    eventHandler(div, 'click', function() {
+        promptBox.innerHTML = '该元素被删除了';
+        queueDisplay.removeChild(div);
+    });
 });
 
 eventHandler(rEnqueueBtn, 'click', function() {
@@ -87,6 +92,11 @@ eventHandler(rEnqueueBtn, 'click', function() {
     div.innerHTML = textbox.value;
 
     queueDisplay.appendChild(div);
+
+    eventHandler(div, 'click', function() {
+        promptBox.innerHTML = '该元素被删除了';
+        queueDisplay.removeChild(div);
+    });
 });
 
 eventHandler(lDequeueBtn, 'click', function() {
