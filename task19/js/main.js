@@ -141,25 +141,33 @@ var queue = {
     },
 
     bubbleSort: function () {
+        var count = this.value.length;
+        var round = 0;
+        var intervalID;
 
-        for (var i = 0; i < this.value.length; i++) {
+        intervalID = setInterval(function () {
+            if (count > 0) {
+                if (round < count - 1) {
+                    if (Number(queue.value[round]) > Number(queue.value[round + 1])) {
+                        temp = queue.value[round];
+                        queue.value[round] = queue.value[round + 1];
+                        queue.value[round + 1] = temp;
 
-            for (var j = 0; j < this.value.length - i - 1; j++) {
+                        queue.renderAll();
 
-                var temp;
+                        queueDisplay.children[round].style.background = "red";
+                    } 
 
-                if (Number(this.value[j]) > Number(this.value[j + 1])) {
-                    temp = this.value[j];
-                    this.value[j] = this.value[j + 1];
-                    this.value[j + 1] = temp;
-
-                    let ele = this.renderTarget.children[j];
-
-                    this.renderTarget.removeChild(ele);
-                    this.renderTarget.insertBefore(ele, this.renderTarget.children[j+1]);
-                } 
+                    round++;
+                } else {
+                    queue.renderAll();
+                    count--;
+                    round = 0;
+                }
+            } else {
+                clearInterval(intervalID);
             }
-        }
+        }, 100);
     },
 
     /*
