@@ -1,0 +1,36 @@
+.input-area {
+    margin-bottom: 10px;
+}
+
+textarea {
+    float: left;
+    vertical-align: top;
+}
+
+#tips {
+    color: red;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#display {
+    display: flex;
+    flex-flow: wrap;
+    padding-top: 10px;
+}
+
+.display-item {
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background: #e67e22;
+}
+
+.result {
+    color: white;
+    background: #2c3e50;
+}
