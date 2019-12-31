@@ -59,15 +59,6 @@ function search() {
 
     for (var i = 0; i < inputData.length; i++) {
 
-        // while(1) {
-        //     var r = regEx.exec(inputData[i]);
-        //     if(r) {
-        //         index.push([r.index, regEx.lastIndex]);
-        //     } else {
-        //         break;
-        //     }
-        // }
-
         $('.display-item')[i].innerHTML = inputData[i].replace(regEx, "<span class='result'>" + input + "</span>");
     }
 }

@@ -1,0 +1,36 @@
+div {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin: 20px;
+    margin-right: 0;
+    padding-right: 20px;
+    border: 1px solid blue;
+    background: white;
+}
+
+#tree-root {
+    width: 1300px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+#sort-options {
+    width: 400px;
+    margin: 30px auto;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+#sort-options button {
+    width: 100px;
+    height: 50px;
+}
+
+/* 当前正被遍历到的节点的样式 */
+.current-node {
+    border: 1px solid indianred;
+    background: indianred;
+}
+
+
