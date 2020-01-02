@@ -50,7 +50,7 @@ var removeHandler = document.body.removeEventListener ?
     } :
     function (ele, type, handler) {
         //IE
-        ele.dispatch('on' + type, handler);
+        ele.detachEvent('on' + type, handler);
     };
 
 function getTarget(event) {
